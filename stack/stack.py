@@ -12,6 +12,29 @@ return elements in Last In First Out order.
 """
 
 
+# class Stack:
+#     def __init__(self, value, prev=None, next=None):
+#         self.value = value
+#         self.next = next
+
+#     def __len__(self):
+#         return 0 if self.is_empty() else len(self.list)
+
+#     def push(self, value):
+#         return self.list.append(value)
+
+#     def pop(self):
+#         if self.__len__() > 0:
+#             return self.list.pop()
+
+
+"""
+3) The difference is that a with a linked list 
+you would have to loop through the list to 
+find the tail when adding or deleting from the stack
+"""
+
+
 class Stack:
     def __init__(self):
         self.size = 0
@@ -30,10 +53,3 @@ class Stack:
     def pop(self):
         if self.__len__() > 0:
             return self.list.pop()
-
-
-"""
-3) The difference is that a with a linked list 
-you would have to loop through the list to 
-find the tail when adding or deleting from the stack
-"""
