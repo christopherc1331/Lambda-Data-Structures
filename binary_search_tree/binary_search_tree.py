@@ -50,12 +50,12 @@ class BSTNode:
             else:
                 if self.value > target:
                     if self.left:
-                        self.left.contains(target)
+                        return self.left.contains(target)
                     else:
                         return False
                 else:
                     if self.right:
-                        self.right.contains(target)
+                        return self.right.contains(target)
                     else:
                         return False
         else:
